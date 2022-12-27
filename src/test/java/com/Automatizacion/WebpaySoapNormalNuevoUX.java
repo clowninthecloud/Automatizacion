@@ -25,7 +25,7 @@ public class WebpaySoapNormalNuevoUX {
         driver.manage().window().maximize();
     }
 
-    //Casos de Prueba
+    //Casos de Prueba en ambiente Mantenciones
     @Test //OK
     public void testWebpaySoapNormalNuevoUX_001_Mastercard_Credito() throws Exception {
         driver.get("https://web5qa.test.transbank.cl:7443/ewebpay/jsf/welcome.jsf");
