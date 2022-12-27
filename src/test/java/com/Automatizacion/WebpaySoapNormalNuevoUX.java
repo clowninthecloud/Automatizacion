@@ -28,7 +28,7 @@ public class WebpaySoapNormalNuevoUX {
     //Casos de Prueba
     @Test //OK
     public void testWebpaySoapNormalNuevoUX_001_Mastercard_Credito() throws Exception {
-        driver.get("https://web5qa.test.transbank.cl:8443/ewebpay/jsf/welcome.jsf");
+        driver.get("https://web5qa.test.transbank.cl:7443/ewebpay/jsf/welcome.jsf");
         Thread.sleep(2000);//para que no vaya tan rapido
         driver.findElement(By.xpath("//button[@id='ewebpayTestForm:tiendaNormal']/span")).click();
         driver.findElement(By.xpath("//form[@id='ewebpayTestForm']/table/tbody")).click();
@@ -39,7 +39,7 @@ public class WebpaySoapNormalNuevoUX {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#tarjetas"))).click();
         driver.findElement(By.id("card-number")).click();
         driver.findElement(By.id("card-number")).clear();
-        driver.findElement(By.id("card-number")).sendKeys("5186174005912785");
+        driver.findElement(By.id("card-number")).sendKeys("5186174582209068");
         Thread.sleep(2000);
         driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Número de tarjeta'])[1]/following::button[1]")).click();
 
@@ -67,7 +67,7 @@ public class WebpaySoapNormalNuevoUX {
 
     @Test //OK
     public void testWebpaySoapNormalNuevoUX_002_Visa_Credito() throws Exception {
-        driver.get("https://web5qa.test.transbank.cl:8443/ewebpay/jsf/welcome.jsf");
+        driver.get("https://web5qa.test.transbank.cl:7443/ewebpay/jsf/welcome.jsf");
         Thread.sleep(2000);//para que no vaya tan rapido
         driver.findElement(By.xpath("//button[@id='ewebpayTestForm:tiendaNormal']/span")).click();
         driver.findElement(By.xpath("//form[@id='ewebpayTestForm']/table/tbody")).click();
@@ -104,7 +104,7 @@ public class WebpaySoapNormalNuevoUX {
 
     @Test //OK
     public void testWebpaySoapNormalNuevoUX_003_Visa_Prepago() throws Exception {
-        driver.get("https://web5qa.test.transbank.cl:8443/ewebpay/jsf/welcome.jsf");
+        driver.get("https://web5qa.test.transbank.cl:7443/ewebpay/jsf/welcome.jsf");
         Thread.sleep(2000);//para que no vaya tan rapido
         driver.findElement(By.xpath("//button[@id='ewebpayTestForm:tiendaNormal']/span")).click();
         driver.findElement(By.xpath("//form[@id='ewebpayTestForm']/table/tbody")).click();
@@ -141,7 +141,7 @@ public class WebpaySoapNormalNuevoUX {
 
     @Test //VALIDAR TARJETA
     public void testWebpaySoapNormalNuevoUX_004_Mastercard_Prepago() throws Exception {
-        driver.get("https://web5qa.test.transbank.cl:8443/ewebpay/jsf/welcome.jsf");
+        driver.get("https://web5qa.test.transbank.cl:7443/ewebpay/jsf/welcome.jsf");
         Thread.sleep(2000);//para que no vaya tan rapido
         driver.findElement(By.xpath("//button[@id='ewebpayTestForm:tiendaNormal']/span")).click();
         driver.findElement(By.xpath("//form[@id='ewebpayTestForm']/table/tbody")).click();
@@ -178,8 +178,8 @@ public class WebpaySoapNormalNuevoUX {
 
 
     @Test //OK
-    public void testWebpaySoapNormalNuevoUX_005_Mastercard_Debito() throws Exception {
-        driver.get("https://web5qa.test.transbank.cl:8443/ewebpay/jsf/welcome.jsf");
+    public  void testWebpaySoapNormalNuevoUX_005_Mastercard_Debito() throws Exception {
+        driver.get("https://web5qa.test.transbank.cl:7443/ewebpay/jsf/welcome.jsf");
         Thread.sleep(2000);//para que no vaya tan rapido
         driver.findElement(By.xpath("//button[@id='ewebpayTestForm:tiendaNormal']/span")).click();
         driver.findElement(By.xpath("//form[@id='ewebpayTestForm']/table/tbody")).click();
@@ -190,7 +190,7 @@ public class WebpaySoapNormalNuevoUX {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#tarjetas"))).click();
         driver.findElement(By.id("card-number")).click();
         driver.findElement(By.id("card-number")).clear();
-        driver.findElement(By.id("card-number")).sendKeys("5298839802406810");
+        driver.findElement(By.id("card-number")).sendKeys("5241010017372464");
         Thread.sleep(2000);
         driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Número de tarjeta'])[1]/following::button[1]")).click();
         Thread.sleep(2000);
@@ -216,7 +216,7 @@ public class WebpaySoapNormalNuevoUX {
 
     @Test //OK
     public void testWebpaySoapNormalNuevoUX_006_Visa_Debito() throws Exception {
-        driver.get("https://web5qa.test.transbank.cl:8443/ewebpay/jsf/welcome.jsf");
+        driver.get("https://web5qa.test.transbank.cl:7443/ewebpay/jsf/welcome.jsf");
         Thread.sleep(2000);//para que no vaya tan rapido
         driver.findElement(By.xpath("//button[@id='ewebpayTestForm:tiendaNormal']/span")).click();
         driver.findElement(By.xpath("//form[@id='ewebpayTestForm']/table/tbody")).click();
