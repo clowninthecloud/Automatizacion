@@ -248,7 +248,7 @@ public class WebpaySoapNormalNuevoUX {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@id='j_idt47:j_idt52']/span"))).click();
         Thread.sleep(4000);
 
-
+//after class
 
     }
 
