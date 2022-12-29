@@ -50,7 +50,7 @@ public class WebpaySoapNormalNuevoUX {
         driver.findElement(By.id("card-cvv")).clear();
         Thread.sleep(2000);
         driver.findElement(By.id("card-cvv")).sendKeys("123");
-        Thread.sleep(3000);
+        Thread.sleep(2000);
 
         driver.findElement(By.xpath("//button[contains(text(),'Pagar')]")).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@value='Aceptar']"))).click();
