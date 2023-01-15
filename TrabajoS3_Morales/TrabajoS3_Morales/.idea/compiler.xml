@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="KR-exported-java-testNG-maven-project" />
+        <module name="TrabajoS3_Morales" />
       </profile>
     </annotationProcessing>
   </component>
